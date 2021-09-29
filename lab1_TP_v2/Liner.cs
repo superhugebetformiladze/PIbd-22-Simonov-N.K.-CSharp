@@ -115,13 +115,12 @@ namespace lab1_TP_v2
             Pen pen = new Pen(Color.Black);
             pen.Width = 2.0F;
             Brush brBlack = new SolidBrush(Color.Black);
-            Brush br3 = new SolidBrush(Color.FromArgb(67, 92, 54));
-            Brush br4 = new SolidBrush(Color.FromArgb(179, 212, 222));
-            Brush br = new SolidBrush(MainColor);
-            Brush br2 = new SolidBrush(SecondColor);
+            Brush brWindow = new SolidBrush(Color.FromArgb(179, 212, 222));
+            Brush brMain = new SolidBrush(MainColor);
+            Brush brSecond = new SolidBrush(SecondColor);
 
             // нижняя часть лайнера
-            g.FillPolygon(br = new SolidBrush(MainColor), new[]{
+            g.FillPolygon(brMain, new[]{
                     new Point(Convert.ToInt32(_startPosX), Convert.ToInt32(_startPosY + 60)),
                     new Point(Convert.ToInt32(_startPosX + 35), Convert.ToInt32(_startPosY + 110)),
                     new Point(Convert.ToInt32(_startPosX + 155), Convert.ToInt32(_startPosY + 110)),
@@ -130,12 +129,12 @@ namespace lab1_TP_v2
 
             // середина лайнера
             RectangleF Body = new RectangleF(_startPosX + 20, _startPosY + 30, 150, 30);
-            g.FillRectangle(br2, Body);
+            g.FillRectangle(brSecond, Body);
 
             // кабина капитана
             if (CaptainsCabin)
             {
-                g.FillPolygon(br = new SolidBrush(MainColor), new[]{
+                g.FillPolygon(brMain, new[]{
                     new Point(Convert.ToInt32(_startPosX + 30), Convert.ToInt32(_startPosY)),
                     new Point(Convert.ToInt32(_startPosX + 30), Convert.ToInt32(_startPosY + 30)),
                     new Point(Convert.ToInt32(_startPosX + 140), Convert.ToInt32(_startPosY + 30)),
@@ -161,7 +160,7 @@ namespace lab1_TP_v2
             if (Window)
             {
                 RectangleF Window = new RectangleF(_startPosX + 20, _startPosY + 35, 150, 20);
-                g.FillRectangle(br4, Window);
+                g.FillRectangle(brWindow, Window);
 
                 g.DrawLine(pen, _startPosX + 20, _startPosY + 35, _startPosX + 170, _startPosY + 35);
                 g.DrawLine(pen, _startPosX + 20, _startPosY + 55, _startPosX + 170, _startPosY + 55);

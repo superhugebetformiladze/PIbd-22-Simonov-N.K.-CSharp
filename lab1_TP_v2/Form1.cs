@@ -62,7 +62,7 @@ namespace lab1_TP_v2
 					}
 					else
 					{
-						MessageBox.Show("Сначала создайте зенитку!!");
+						MessageBox.Show("Сначала создайте лайнер!!");
 						return;
 					}
 					break;
@@ -73,7 +73,7 @@ namespace lab1_TP_v2
 					}
 					else
 					{
-						MessageBox.Show("Сначала создайте зенитку!!");
+						MessageBox.Show("Сначала создайте лайнер!!");
 						return;
 					}
 					break;
@@ -84,7 +84,7 @@ namespace lab1_TP_v2
 					}
 					else
 					{
-						MessageBox.Show("Сначала создайте зенитку!!");
+						MessageBox.Show("Сначала создайте лайнер!!");
 						return;
 					}
 					break;
@@ -95,7 +95,7 @@ namespace lab1_TP_v2
 					}
 					else
 					{
-						MessageBox.Show("Сначала создайте зенитку!!");
+						MessageBox.Show("Сначала создайте лайнер!!");
 						return;
 					}
 					break;
@@ -104,5 +104,19 @@ namespace lab1_TP_v2
 
 			Draw();
 		}
+		private void Form1_Load(object sender, EventArgs e)
+		{
+
+		}
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Form1_Load_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
