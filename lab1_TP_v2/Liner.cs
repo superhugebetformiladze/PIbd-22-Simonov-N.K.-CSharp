@@ -191,7 +191,6 @@ namespace lab1_TP_v2
                     new Point(Convert.ToInt32(_startPosX + 20), Convert.ToInt32(_startPosY + 60)),
             });
             g.DrawLine(pen, _startPosX + 30, _startPosY + 30, _startPosX + 140, _startPosY + 30);
-
         }
     }
 }

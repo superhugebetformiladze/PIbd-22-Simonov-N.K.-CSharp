@@ -10,10 +10,10 @@ using System.Windows.Forms;
 
 namespace lab1_TP_v2
 {
-    public partial class Form1 : Form
+    public partial class FormLiner : Form
     {
         private Liner liner;
-        public Form1()
+        public FormLiner()
         {
             InitializeComponent();
         }
@@ -31,12 +31,9 @@ namespace lab1_TP_v2
             liner.Init(rnd.Next(100, 300), rnd.Next(1000, 2000), Color.FromArgb(129, 76, 76),
                 Color.FromArgb(76, 126, 129), true, true);
             liner.SetPosition(rnd.Next(150, 200),
-           rnd.Next(150, 200), pictureBox1.Width, pictureBox1.Height);
-
-
+            rnd.Next(150, 200), pictureBox1.Width, pictureBox1.Height);
             Draw();
         }
-
 
         private void buttonMove_Click(object sender, EventArgs e)
         {
@@ -90,9 +87,7 @@ namespace lab1_TP_v2
 						return;
 					}
 					break;
-
 			}
-
 			Draw();
 		}
     }
