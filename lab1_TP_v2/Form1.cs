@@ -37,15 +37,6 @@ namespace lab1_TP_v2
             Draw();
         }
 
-        private void buttonRight_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void buttonDown_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void buttonMove_Click(object sender, EventArgs e)
         {
@@ -104,19 +95,5 @@ namespace lab1_TP_v2
 
 			Draw();
 		}
-		private void Form1_Load(object sender, EventArgs e)
-		{
-
-		}
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Form1_Load_1(object sender, EventArgs e)
-        {
-
-        }
     }
 }
